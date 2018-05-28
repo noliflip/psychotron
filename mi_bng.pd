@@ -1,0 +1,21 @@
+#N canvas 577 60 149 253 10;
+#X floatatom 24 81 5 0 0 0 - - -;
+#X floatatom 75 81 5 0 0 0 - - -;
+#X obj 24 166 spigot;
+#X obj 24 188 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 24 209 outlet;
+#X obj 24 58 stripnote;
+#X obj 24 105 t b f;
+#X obj 57 129 == \$1;
+#X obj 24 4 notein 1;
+#X connect 0 0 6 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 5 0 0 0;
+#X connect 5 1 1 0;
+#X connect 6 0 2 0;
+#X connect 6 1 7 0;
+#X connect 7 0 2 1;
+#X connect 8 0 5 0;
+#X connect 8 1 5 1;
